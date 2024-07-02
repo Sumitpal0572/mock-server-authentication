@@ -5,6 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mock Server Authentication</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .card {
+            border: 1px solid black;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,6 +25,14 @@
     <input type="text" placeholder="password" id="Password">
     <button id="Submit">Login</button>
 
+    <div id="message">
+
+    </div>
+
+    <div id="todo-container" style="display: none">
+        <h2>Todos</h2>
+        <button id="fetch-todo">Fetch Todo</button>
+    </div>
     <script src="index.js"></script>
 </body>
 
